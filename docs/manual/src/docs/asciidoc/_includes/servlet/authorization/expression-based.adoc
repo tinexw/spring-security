@@ -26,7 +26,7 @@ This provides some common expressions which are available in both web and method
 By default if the supplied role does not start with 'ROLE_' it will be added.
 This can be customized by modifying the `defaultRolePrefix` on `DefaultWebSecurityExpressionHandler`.
 
-| `hasAnyRole([role1,role2])`
+| `hasAnyRole([role1],[role2])`
 | Returns `true` if the current principal has any of the supplied roles (given as a comma-separated list of strings).
 By default if the supplied role does not start with 'ROLE_' it will be added.
 This can be customized by modifying the `defaultRolePrefix` on `DefaultWebSecurityExpressionHandler`.
@@ -34,7 +34,7 @@ This can be customized by modifying the `defaultRolePrefix` on `DefaultWebSecuri
 | `hasAuthority([authority])`
 | Returns `true` if the current principal has the specified authority.
 
-| `hasAnyAuthority([authority1,authority2])`
+| `hasAnyAuthority([authority1],[authority2])`
 | Returns `true` if the current principal has any of the supplied authorities (given as a comma-separated list of strings)
 
 | `principal`
